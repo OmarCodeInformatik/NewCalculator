@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="calculator-wrapper">
+    <div class="calc" id="mainCalc">
+        <div id="resultArea"></div>
+    <div calc-first-row>
+        <button id="deleteButton">C</button>
+        <button class="operator" data-op="/">&divide;</button>
+    </div>
+
+    <div class="calc-thrid-row">
+        <button class="number">7</button>
+        <button class="number">8</button>
+        <button class="number">9</button>
+        <button class="operator" data-op="*">&times;</button>
+    </div>
+
+
+    <div class="calc-third-row">
+        <button class="number">4</button>
+        <button class="number">5</button>
+        <button class="number">6</button>
+        <button class="operator" data-op="-">&minus;</button>
+    </div>
+
+    <div class="calc-fourth-row">
+        <button class="number">1</button>
+        <button class="number">2</button>
+        <button class="number">3</button>
+        <button class="operator" data-op="+">&plus;</button>
+    </div>
+
+    <div class="calc-fifth-row">
+        <button class="number">0</button>
+        <button id="resultButton">=</button>
+        <button id="moreButtons" onclick="moreButtons">#</button>
+    </div>
+<div class="calc-secondary-box" class="calc"   id="secondaryBox" >
+        <button id="sqrtButton">√</button>
+        <button id="piButton">π</button>
+        <button id="bracketButton">( )</button>
+        <button id="squareButton">x²</button>
+        <button class="number" data-value=".">.</button>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

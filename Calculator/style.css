@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    height: 100vh;              /* volle Bildschirmhöhe */
+    display: flex;
+    justify-content: center;    /* horizontal zentrieren */
+    align-items: center;        /* vertikal zentrieren */
+    background: linear-gradient(320deg, #00f2ff, #eeff00, #ff0000)
+}
+#resultArea {
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0  auto;
+    background: rgba(255, 255, 255, 0.155);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 6px 18px rgba(255, 255, 255, 0.1);
+    width: 290px;
+    height: 50px;
+    overflow: visible;
+    transition-duration: 1s;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Zahl rechts anzeigen */
+    padding-right: 15px;
+
+}
+#operations {
+    background-color: rgba(4, 4, 5, 0.205);
+}
+button:hover {
+    transform: scale(1.05);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition-duration: 1s;
+    box-shadow: 0 8px 20px;
+    border: 0px;
+}
+button {
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0  auto;
+    background: rgba(255, 255, 255, 0.201);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 6px 18px rgba(255, 255, 255, 0.1);
+    width: 50px;
+    height: 50px;
+    overflow: visible;
+    transition-duration: 1s;
+    border: 0px;
+}
+#deleteButton {
+    width: 170px;
+    border: 0px;
+}
+#resultButton {
+    width: 110px;
+    background-color: rgba(4, 4, 5, 0.205);
+    border: 0px;
+}
+#moreButtons {
+    background-color: rgb(0, 86, 110);
+    color: white;
+}
+.calc {
+    background-color: rgba(255, 255, 255, 0.605);
+    backdrop-filter: blur(8px);
+    border-radius: 25px;
+    width: 300px;
+    border: 1px solid rgba(255, 255, 255, 0.295);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.137);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.calc > div{
+    display: flex;
+    gap: 10px;
+}
+.calculator-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+
+.calc {
+    transition: transform 0.5s ease;
+}
+
+.calc-secondary-box {
+    background-color: rgba(255,255,255,0.2);
+    backdrop-filter: blur(8px);
+    padding: 15px;
+    border-radius: 25px;
+    display: flex;
+    gap: 10px;
+
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all 0.5s ease;
+}
+.wrapper-active .calc-secondary-box {
+    opacity: 1;
+    transform: translateX(0);
+}
